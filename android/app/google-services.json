@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "246500305065",
+    "project_id": "pocotunes-77135",
+    "storage_bucket": "pocotunes-77135.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246500305065:android:40a8306c61704adf99e1b8",
+        "android_client_info": {
+          "package_name": "com.ronalddev.poco_tunes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246500305065-jbij75b357vp85f1qgnfd2obe2tdlece.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUf_s1zPUHvfOF5W3TAO4fqBDbLG1iP3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246500305065-jbij75b357vp85f1qgnfd2obe2tdlece.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
