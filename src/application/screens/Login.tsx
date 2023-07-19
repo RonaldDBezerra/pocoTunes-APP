@@ -17,7 +17,7 @@ import {
   Title,
 } from 'react-native-paper';
 import auth from '@react-native-firebase/auth';
-import PropsStacksScreen from '../../types/TypesStacksRoutes';
+import { PropsStacksScreen } from '../../types/TypesStacksRoutes';
 import Icon from 'react-native-vector-icons/Feather';
 import Lottie from 'lottie-react-native';
 import Styles from '../../styles/Styles';
@@ -42,11 +42,11 @@ export function Login({ navigation }: PropsStacksScreen) {
 
     auth()
       .signInWithEmailAndPassword(email, passWord)
-      .catch((e) => {
-        console.log(e)
-        Alert.alert("Login", "Não foi possivel acessar sua conta!")
-        setIsDisabled(false)
-      })
+      .catch(e => {
+        console.log(e);
+        Alert.alert('Login', 'Não foi possivel acessar sua conta!');
+        setIsDisabled(false);
+      });
   }
 
   return (
