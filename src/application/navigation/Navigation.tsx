@@ -2,7 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Login } from "../screens/Login";
 import { Create } from "../screens/Create";
 import { ForgotPassword } from "../screens/ForgotPassword";
-// import { TabNavigation } from "./TabNavigation";
+import TabNavigation from "./TabNavigation"
 
 const {Screen, Navigator} = createNativeStackNavigator();
 
@@ -11,6 +11,12 @@ export function Navigation() {
   return(
     <Navigator> 
     
+        <Screen
+          name="Tab"
+          component={TabNavigation}
+          options={{headerShown: false}}
+          />
+
         <Screen
           name="Login"
           component={Login}
@@ -28,12 +34,6 @@ export function Navigation() {
           component={ForgotPassword}
           options={{headerShown: false}}
           />
-
-        {/* <Screen
-          name="Tab"
-          component={TabNavigation}
-          options={{headerShown: false, tabBarShowLabel: false}}
-          /> */}
     </Navigator>
   )
 }
